@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Stock Analyzer</title>
+  <link rel="stylesheet" href="stocks.css">
+  <script defer src="stocks.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+</head>
+<body>
+  <header>
+    <h1>Advanced Stock Analyzer</h1>
+    <input type="text" id="stock-symbol" placeholder="Enter Stock Symbol (e.g., AAPL)">
+    <button id="search-btn">Search</button>
+  </header>
+  <main>
+    <div id="stock-info">
+      <h2>Stock Information</h2>
+      <div id="stock-data"></div>
+    </div>
+    <div id="chart-container">
+      <canvas id="stock-chart"></canvas>
+    </div>
+  </main>
+  <footer>
+    <p>Powered by Alpha Vantage API</p>
+  </footer>
+</body>
+</html>
